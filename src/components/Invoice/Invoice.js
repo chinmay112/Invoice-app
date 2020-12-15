@@ -121,10 +121,10 @@ class Invoice extends Component {
         </div>
         <div className={styles.addresses}>
           <div className={styles.from}>
-            <strong>Amazing Company</strong><br />
-              123 Kensington Ave<br />
-              Toronto, ON, Canada &nbsp;A1B2C3<br />
-              416-555-1234
+            <strong>Invoice Packaging</strong><br />
+              1413 Sector-1,<br />
+              Rohtak, Haryana <br />
+              124001
           </div>
           <div>
             <div className={`${styles.valueTable} ${styles.to}`}>

@@ -16,6 +16,16 @@ body {
   .register {
     width: 400px;
   }
+  .google
+  {
+    background-color: #e6e6e6;
+    color: #827ffe;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    width: 400px;
+    padding: 20px 30px;
+  }
   
   .login h2,
   .register h2 {

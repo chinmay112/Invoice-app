@@ -28,9 +28,13 @@ class Login extends Component {
 		localStorage.setItem("session",this.state.session)
 	}
 	responseGoogle=(response)=>{
-		console.log(response);
+		console.log("this is google response",response);
 		console.log(response.profileObj);
-		
+		if(response){
+		this.setState({
+			redirect:true
+		})
+	}
 		
 	  }
 
@@ -67,8 +71,7 @@ class Login extends Component {
 	}
 	else
 	window.alert("invalid Username or Password")
-		// <Link to="/invoice">Create an account</Link>
-      //history.push('./invoice')
+	
 	}
 
 	render() {
@@ -78,14 +81,7 @@ class Login extends Component {
 				(<Invoice/>):
 
 			<div className="login">
-				<GoogleLogin
-        clientId="243046509918-vaopgngj9qmqeke92n93rcpae4eudj2t.apps.googleusercontent.com"
-        buttonText="Login"
-        onSuccess={this.responseGoogle}
-        onFailure={this.responseGoogle}
-        cookiePolicy={'single_host_origin'}
-        
-        />
+				
 				<form onSubmit={this.displayLogin}>
 					<h2>Login</h2>
 					<div className="username">
@@ -110,6 +106,17 @@ class Login extends Component {
 
 					<input type="submit" value="Login" />
 				</form>
+				<div >
+				<GoogleLogin className="google" 
+        clientId="243046509918-nrm7cf0m907ssf91nkfn0je9v6ujs6h7.apps.googleusercontent.com"
+        buttonText="Login"
+        onSuccess={this.responseGoogle}
+        onFailure={this.responseGoogle}
+		cookiePolicy={'single_host_origin'}
+		
+        
+        />
+		</div>
 			
 				<Link to="/register">Create an account</Link>
 		
