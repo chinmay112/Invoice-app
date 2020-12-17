@@ -1,7 +1,7 @@
 {
   "name": "react-simple-invoice-dev",
+  "homepage": "http://chinmay112.github.io/Invoice-app",
   "version": "1.0.0",
-  "homepage": "https://http://demo.firxworx.com/react-simple-invoice/",
   "private": true,
   "dependencies": {
     "html2canvas": "^1.0.0-rc.7",
@@ -19,12 +19,20 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && dev/deploy.sh"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+   
   },
+
+   
+    
+  
+    
   "eslintConfig": {
     "extends": "react-app"
   },

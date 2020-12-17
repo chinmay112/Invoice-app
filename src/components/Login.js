@@ -30,7 +30,7 @@ class Login extends Component {
 	responseGoogle=(response)=>{
 		console.log("this is google response",response);
 		console.log(response.profileObj);
-		if(response){
+		if(response.profileObj){
 		this.setState({
 			redirect:true
 		})
