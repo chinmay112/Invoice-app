@@ -110,10 +110,7 @@ class Invoice extends Component {
 
   render = () => {
     return (
-      // <div>
-      //   {console.log("heloo this is a check on session",this.state.session)}
-      //   {(this.state.session)?(<Login/>):(
-      <div id = "aaabra">
+    
       <div className={styles.invoice}>
         {console.log("heloo this is a check on session",this.state.session)}
         <div className={styles.brand}>
@@ -194,7 +191,7 @@ class Invoice extends Component {
         </div>
 
       </div>
-      </div>
+      
      
 
     )
