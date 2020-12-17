@@ -84,7 +84,7 @@ class Login extends Component {
 				
 				<form onSubmit={this.displayLogin}>
 					<h2>Login</h2>
-					<div className="username">
+					<div className="box">
 						<input
 							type="text"
 							placeholder="Email"
@@ -94,7 +94,7 @@ class Login extends Component {
 						/>
 					</div>
 
-					<div className="password">
+					<div className="box">
 						<input
 							type="password"
 							placeholder="Password..."

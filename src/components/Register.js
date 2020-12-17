@@ -60,12 +60,12 @@ class Register extends Component {
 	render() {
 		return (
 			
-			<div className="register">
+			<div  >
 				{(this.state.redirect) ?(<Login/>):(
 				<form onSubmit={this.displayLogin}>
-					<h2>Register</h2>
+					<h2 className="h2"> Register</h2>
 
-					<div className="name">
+					<div className="box">
 						<input
 							type="text"
 							placeholder="Full Name"
@@ -76,7 +76,7 @@ class Register extends Component {
 						/>
 					</div>
 
-					<div className="email">
+					<div className="box">
 						<input
 							type="text"
 							placeholder="Enter your email"
@@ -87,7 +87,7 @@ class Register extends Component {
 						/>
 					</div>
 
-					<div className="pasword">
+					<div className="box">
 						<input
 							type="password"
 							placeholder="Password"
@@ -98,11 +98,11 @@ class Register extends Component {
 						/>
 					</div>
 
-					<div className="password">
+					<div className="box">
 						<input type="password" placeholder="Confirm Password" name="password1" value={this.state.password1} onChange={this.update} required/>
 					</div>
 
-					<input type="submit" value="Register" />
+					<div className="box1"><input type="submit" value="Register" /></div>
 					<Link to="/">Login Here</Link> 
 				</form>)}
 					
